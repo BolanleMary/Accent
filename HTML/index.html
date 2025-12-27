@@ -10,17 +10,39 @@
     <div class="container">
         <h3>Type and hear in any accent</h3>
         <form>
+            <div class="mainDiv">
             <textarea
   placeholder="Type here..."
   rows="4">
+</textarea><button class="micBtn"><img src="../ASSESTS/micOff.svg" class="mic"></button>
 
-</textarea>
-            <select name="" id="">
-                <option value="default">select country</option>
-            </select>
+            <div class="custom-select">
+    <button class="selected">
+        <img src="../ASSESTS/nigeriaFlag.svg" />
+        
+    </button>
+
+    <div class="options">
+        <div class="option" data-value="us">
+            <img src="../ASSESTS/nigeriaFlag.svg" />
+                    </div>
+
+        <div class="option" data-value="uk">
+            <img src="../ASSESTS/UKFlag.png" />
+            <span>United Kingdom</span>
+        </div>
+
+        <div class="option" data-value="ng">
+            <img src="../ASSESTS/NigeriaFlag.png" />
+            <span>Nigeria</span>
+        </div>
+    </div>
+</div>
+
+            </div>
         </form>
         
-<button><img src="../ASSESTS/micOff.svg"></button>
+
         <script src="../JAVASCRIPT/index.js"></script>
     </div>
     
