@@ -8,39 +8,24 @@
 </head>
 <body>
     <div class="container">
-        <h3>Type and hear in any accent</h3>
-        <form>
-            <div class="mainDiv">
-            <textarea
-  placeholder="Type here..."
-  rows="4">
-</textarea><button class="micBtn"><img src="../ASSESTS/micOff.svg" class="mic"></button>
+  <h3>Type and hear in any accent</h3>
 
-            <div class="custom-select">
-    <button class="selected">
-        <img src="../ASSESTS/nigeriaFlag.svg" />
-        
+  <textarea id="textInput" placeholder="Type here..." rows="4"></textarea>
+
+  <div class="controls">
+    <button id="micBtn">
+      <img id="micIcon" src="../ASSETS/micOff.svg" />
     </button>
 
-    <div class="options">
-        <div class="option" data-value="us">
-            <img src="../ASSESTS/nigeriaFlag.svg" />
-                    </div>
+    <button id="stopBtn">⏹</button>
+  </div>
 
-        <div class="option" data-value="uk">
-            <img src="../ASSESTS/UKFlag.png" />
-            <span>United Kingdom</span>
-        </div>
-
-        <div class="option" data-value="ng">
-            <img src="../ASSESTS/NigeriaFlag.png" />
-            <span>Nigeria</span>
-        </div>
-    </div>
+  <div class="custom-select">
+    <button class="selected">Select Accent</button>
+    <div class="options"></div>
+  </div>
 </div>
 
-            </div>
-        </form>
         
 
         <script src="../JAVASCRIPT/index.js"></script>
