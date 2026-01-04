@@ -87,6 +87,8 @@ optionsContainer.addEventListener("click", (e) => {
   optionsContainer.classList.remove("show");
 });
 
+
+
 document.addEventListener("click", () => {
   optionsContainer.classList.remove("show");
 });
@@ -131,6 +133,11 @@ stopBtn.addEventListener("click", () => {
   speechSynthesis.cancel();
   micIcon.src = "../ASSETS/micOff.svg";
 });
+
+speechSynthesis.getVoices().forEach(v =>
+  console.log(v.name, v.lang)
+);
+
 
 
 
