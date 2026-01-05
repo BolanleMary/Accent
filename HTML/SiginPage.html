@@ -4,8 +4,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="../CSS/Signin.css"/>
 </head>
 <body>
-    
+   <main className={styles.wrapper}>
+          <h2 className={styles.underline}>Sign up</h2>
+          <form id={styles.form}>
+            <label>
+              <User className={styles.imgIcon} />
+              <input
+              id="name"
+                type="text"
+                name="name"
+                placeholder="Enter Name"
+                required
+              />
+            </label>
+
+            <label>
+              <Mail className={styles.imgIcon} />
+              <input
+              id="email"
+                type="text"
+                name="email"
+                placeholder="Enter Email"
+               required
+              />
+            </label>
+            <span id={styles.errorMsg}></span>
+
+            <label>
+              <input
+                id="password"
+                type="password"
+                name="password"
+                placeholder="Enter password"
+                required
+              />
+              <button type="button" className={styles.eyeImg} id={styles.buttonEye}>
+                <Eye className={styles.eyeImg} id={styles.eyeImg} />
+              </button>
+            </label>
+            <span id={styles.passwordErrMsg}></span>
+            {/* <label>
+            
+            <input type="checkbox"/>
+          </label> */}
+
+            <div className={styles.btn}>
+              <button type="submit" className={styles.signUpBtn}>signup</button>
+              <button className={styles.signInBtn}><Link to="/login">Login</Link></button>
+            </div>
+          </form>
+        </main> 
 </body>
 </html>
