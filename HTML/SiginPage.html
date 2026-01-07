@@ -7,11 +7,18 @@
     <link rel="stylesheet" href="../CSS/Signin.css"/>
 </head>
 <body>
-   <main className={styles.wrapper}>
-          <h2 className={styles.underline}>Sign up</h2>
-          <form id={styles.form}>
+   <div class="container">
+      <div class="innerBox">
+        <div class="intro">
+          <h1>Welcome to your To-do list App</h1>
+          <p>Sign up to <button style="
+          padding: 6px 12px; cursor: pointer; border-radius: 10px; color: blueviolet;">Get started</button></p>
+        </div>
+        <main class="wrapper">
+          <h2 class="underline">Sign up</h2>
+          <form id="form">
             <label>
-              <User className={styles.imgIcon} />
+              <img src="../assets/userIcon.svg" class="imgIcon" />
               <input
               id="name"
                 type="text"
@@ -22,7 +29,7 @@
             </label>
 
             <label>
-              <Mail className={styles.imgIcon} />
+              <img src="../assets/emailIcon.svg" class="imgIcon" />
               <input
               id="email"
                 type="text"
@@ -31,7 +38,7 @@
                required
               />
             </label>
-            <span id={styles.errorMsg}></span>
+            <span id="errorMsg"></span>
 
             <label>
               <input
@@ -41,21 +48,23 @@
                 placeholder="Enter password"
                 required
               />
-              <button type="button" className={styles.eyeImg} id={styles.buttonEye}>
-                <Eye className={styles.eyeImg} id={styles.eyeImg} />
+              <button type="button" class="eyeImg" id="buttonEye">
+                <img src="../assets/eye.svg" class="eyeImg" id="eyeImg" />
               </button>
             </label>
-            <span id={styles.passwordErrMsg}></span>
-            {/* <label>
+            <span id="passwordErrMsg"></span>
+            <!-- <label>
             
             <input type="checkbox"/>
-          </label> */}
+          </label> -->
 
-            <div className={styles.btn}>
-              <button type="submit" className={styles.signUpBtn}>signup</button>
-              <button className={styles.signInBtn}><Link to="/login">Login</Link></button>
+            <div class="btn">
+              <button type="submit" class="signUpBtn">signup</button>
+              <button class="signInBtn"><a href="./login.html">Login</a></button>
             </div>
           </form>
-        </main> 
+        </main>
+      </div>
+    </div>
 </body>
 </html>
